@@ -1,6 +1,6 @@
-# Hack Authenticator - 赛博朋克风格的谷歌身份验证器
+# Hack Authenticator - 赛博朋克风格 Google 2FA 身份验证器
 
-一个赛博朋克风格的 Chrome 浏览器插件，用于生成 TOTP（Time-based One-Time Password）动态验证码，支持各种需要二次验证的平台。
+一个赛博朋克风格的 Chrome 浏览器插件（可作为 Google Authenticator 的桌面端替代方案），用于生成 TOTP（Time-based One-Time Password）动态验证码，全面支持各种需要 2FA（双因素身份认证）的平台。
 
 ![Hack Authenticator](./public/icons/icon-128.png)
 
