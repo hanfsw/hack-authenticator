@@ -1,0 +1,96 @@
+/* 二维码生成器样式 */
+
+.qr-generator-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--z-modal);
+    backdrop-filter: blur(4px);
+    animation: fadeIn var(--transition-base);
+}
+
+.qr-generator-content {
+    max-width: 360px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: fadeIn var(--transition-base), slideIn var(--transition-base);
+}
+
+.qr-generator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.qr-generator-header h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.qr-generator-body {
+    padding: var(--spacing-md) 0;
+}
+
+.qr-info {
+    margin-bottom: var(--spacing-md);
+}
+
+.qr-info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-xs) 0;
+    font-size: 12px;
+}
+
+.qr-info-label {
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+.qr-info-value {
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-weight: 600;
+}
+
+.qr-code-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-md);
+    background: #0d1117;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.qr-code-wrapper canvas {
+    display: block;
+}
+
+.qr-hint {
+    text-align: center;
+    font-size: 11px;
+    font-family: var(--font-mono);
+    margin: 0;
+}
+
+.qr-generator-footer {
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.qr-generator-footer .btn {
+    min-width: 100px;
+}

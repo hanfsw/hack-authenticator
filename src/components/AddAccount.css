@@ -1,0 +1,89 @@
+/* 添加账号组件样式 */
+
+.add-account-container {
+    padding: var(--spacing-lg);
+}
+
+.add-account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.add-account-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.mode-toggle {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.mode-toggle .btn {
+    flex: 1;
+}
+
+.qrcode-mode {
+    margin-top: var(--spacing-lg);
+}
+
+.add-account-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.form-group label .text-danger {
+    color: var(--color-danger);
+    margin-left: 2px;
+}
+
+.form-group label .text-muted {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form-group input.error {
+    border-color: var(--color-danger);
+}
+
+.form-group input.error:focus {
+    box-shadow: 0 0 0 3px rgba(255, 51, 102, 0.2);
+}
+
+.error-message {
+    font-size: 12px;
+    color: var(--color-danger);
+    margin-top: var(--spacing-xs);
+}
+
+.form-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.form-actions .btn {
+    flex: 1;
+}
+
+.form-actions .spinner {
+    width: 14px;
+    height: 14px;
+    margin-right: var(--spacing-xs);
+}

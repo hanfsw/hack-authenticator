@@ -1,0 +1,123 @@
+/* ========================================
+   主题变量定义 - 赛博朋克风格
+   ======================================== */
+
+/* 深色主题（像素Hack风格） */
+[data-theme="dark"] {
+  /* 背景色 - 复古终端风格 */
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-tertiary: #21262d;
+  --bg-overlay: rgba(13, 17, 23, 0.95);
+
+  /* 文字色 - 绿色单色调 */
+  --text-primary: #00ff00;
+  --text-secondary: #00cc00;
+  --text-muted: #008800;
+
+  /* 像素Hack色 - 绿色系 */
+  --neon-cyan: #00ff00;
+  --neon-purple: #00ff00;
+  --neon-green: #00ff00;
+  --neon-pink: #00ff00;
+
+  /* 功能色 */
+  --color-primary: #00ff00;
+  --color-secondary: #00cc00;
+  --color-success: #00ff00;
+  --color-danger: #ff3333;
+  --color-warning: #ffaa00;
+
+  /* 发光效果 - 绿色像素风格 */
+  --glow-cyan: 0 0 4px #00ff00, 0 0 8px #00ff00;
+  --glow-purple: 0 0 4px #00ff00, 0 0 8px #00ff00;
+  --glow-green: 0 0 4px #00ff00, 0 0 8px #00ff00;
+
+  /* 边框 - 像素化 */
+  --border-color: #00ff00;
+  --border-glow: 2px solid #00ff00;
+
+  /* 阴影 - 减弱 */
+  --shadow-sm: 0 2px 4px rgba(0, 255, 0, 0.2);
+  --shadow-md: 0 4px 8px rgba(0, 255, 0, 0.2);
+  --shadow-lg: 0 8px 16px rgba(0, 255, 0, 0.2);
+}
+
+/* 浅色主题 */
+[data-theme="light"] {
+  /* 背景色 */
+  --bg-primary: #f0f4f8;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #e2e8f0;
+  --bg-overlay: rgba(255, 255, 255, 0.95);
+
+  /* 文字色 */
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+
+  /* 赛博风格调色 */
+  --neon-cyan: #0066ff;
+  --neon-purple: #9333ea;
+  --neon-green: #10b981;
+  --neon-pink: #ec4899;
+
+  /* 功能色 */
+  --color-primary: var(--neon-cyan);
+  --color-secondary: var(--neon-purple);
+  --color-success: var(--neon-green);
+  --color-danger: #dc2626;
+  --color-warning: #f59e0b;
+
+  /* 发光效果（浅色模式下减弱） */
+  --glow-cyan: 0 0 5px rgba(0, 102, 255, 0.3), 0 0 10px rgba(0, 102, 255, 0.2);
+  --glow-purple: 0 0 5px rgba(147, 51, 234, 0.3), 0 0 10px rgba(147, 51, 234, 0.2);
+  --glow-green: 0 0 5px rgba(16, 185, 129, 0.3), 0 0 10px rgba(16, 185, 129, 0.2);
+
+  /* 边框 */
+  --border-color: rgba(0, 102, 255, 0.2);
+  --border-glow: 1px solid var(--neon-cyan);
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 通用变量（两个主题共用） */
+:root {
+  /* 字体 - 像素风格 */
+  --font-mono: 'Courier New', 'Consolas', monospace;
+  --font-title: 'Courier New', 'Consolas', monospace;
+  --font-sans: 'Courier New', 'Consolas', monospace;
+
+  /* 间距 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* 圆角 - 像素化（无圆角） */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-full: 0px;
+
+  /* 过渡 */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Z-index层级 */
+  --z-dropdown: 1000;
+  --z-modal: 2000;
+  --z-tooltip: 3000;
+}
+
+/* 主题切换动画 */
+* {
+  transition: background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base);
+}
