@@ -250,7 +250,7 @@
                 <div class="mt-12 bg-gray-50/80 border border-gray-200 rounded-xl p-6 text-center shadow-sm">
                     <p class="text-gray-600 text-sm sm:text-base">
                         <span class="mr-2">💡</span>
-                        安装完成后，建议点击浏览器工具栏的拼图图标 🧩，将 <strong class="text-gray-900">Hack Authenticator</strong> <span class="bg-gray-200 px-1.5 py-0.5 rounded text-xs mx-1">固定</span> 在工具栏上，即刻享受酷炫二步验证！
+                        <span id="install-hint">安装完成后，建议点击浏览器工具栏的拼图图标 🧩，将 <strong class="text-gray-900">Hack Authenticator</strong> <span class="bg-gray-200 px-1.5 py-0.5 rounded text-xs mx-1">固定</span> 在工具栏上，即刻享受酷炫二步验证！</span>
                     </p>
                 </div>
             </div>
@@ -273,7 +273,8 @@
                 step3Title: '开启开发者模式',
                 step3Desc: '在扩展管理页面的<strong class="text-gray-900">右上角</strong>，找到并开启<strong class="text-gray-900">“开发者模式”</strong>开关。开启后，页面左上方会出现新的操作按钮。',
                 step4Title: '加载已解压的扩展',
-                step4Desc: '点击左上角的<strong class="text-gray-900">“加载已解压的扩展程序”</strong>按钮，在弹出的窗口中，选中你在第 1 步中解压得到的文件夹，点击确定完成安装！'
+                step4Desc: '点击左上角的<strong class="text-gray-900">“加载已解压的扩展程序”</strong>按钮，在弹出的窗口中，选中你在第 1 步中解压得到的文件夹，点击确定完成安装！',
+                installHint: '安装完成后，建议点击浏览器工具栏的拼图图标 🧩，将 <strong class="text-gray-900">Hack Authenticator</strong> <span class="bg-gray-200 px-1.5 py-0.5 rounded text-xs mx-1">固定</span> 在工具栏上，即刻享受酷炫二步验证！'
             },
             en: {
                 titleHTML: 'Secure & Minimalist Google Authenticator Alternative<br class="hidden sm:block" />\n                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-500 to-emerald-500">\n                        Cyberpunk 2FA Authenticator\n                    </span>',
@@ -288,7 +289,8 @@
                 step3Title: 'Enable Developer Mode',
                 step3Desc: 'Find the <strong class="text-gray-900">"Developer mode"</strong> toggle at the top right of the extensions page and turn it on. New action buttons will appear at the top left.',
                 step4Title: 'Load Unpacked Extension',
-                step4Desc: 'Click the <strong class="text-gray-900">"Load unpacked"</strong> button at the top left, select the folder you extracted in Step 1, and click Select to install!'
+                step4Desc: 'Click the <strong class="text-gray-900">"Load unpacked"</strong> button at the top left, select the folder you extracted in Step 1, and click Select to install!',
+                installHint: 'Once installed, click the puzzle icon 🧩 in your browser toolbar and <span class="bg-gray-200 px-1.5 py-0.5 rounded text-xs mx-1">Pin</span> <strong class="text-gray-900">Hack Authenticator</strong> to enjoy cool 2FA immediately!'
             }
         };
 
@@ -322,6 +324,9 @@
             document.getElementById('step3-desc').innerHTML = texts[lang].step3Desc;
             document.getElementById('step4-title').innerText = texts[lang].step4Title;
             document.getElementById('step4-desc').innerHTML = texts[lang].step4Desc;
+            
+            const installHintEl = document.getElementById('install-hint');
+            if (installHintEl) installHintEl.innerHTML = texts[lang].installHint;
         }
     </script>
 </body>
